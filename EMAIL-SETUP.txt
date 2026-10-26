@@ -1,0 +1,4 @@
+Email sending now uses Google Apps Script instead of EmailJS. Follow GOOGLE-APPS-SCRIPT-SETUP.txt.
+Owner email: joelframesworks@gmail.com
+Owner WhatsApp: +91 86104 93135
+The Apps Script URL must be configured in order-config.js. WhatsApp requires the customer to press Send.

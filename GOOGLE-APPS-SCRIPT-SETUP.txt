@@ -1,0 +1,33 @@
+JOEL FRAME WORK'S — FREE GOOGLE APPS SCRIPT EMAIL SETUP
+
+Owner email: joelframesworks@gmail.com
+Owner WhatsApp: +91 86104 93135
+
+PART A — CREATE THE BACKEND
+1. Sign into the Google account that should send order emails.
+2. Open https://script.google.com/ and choose New project.
+3. Name it Joel Frame Work Order Backend.
+4. Open the file Code.gs, remove its sample code, and paste all contents from GOOGLE-APPS-SCRIPT-CODE.gs (this file is in the project folder).
+5. Save the project.
+6. Click Deploy > New deployment. Click the gear/type selector and choose Web app.
+7. Set Execute as: Me. Set Who has access: Anyone (if available for your account). Click Deploy.
+8. Approve the requested permissions. Copy the deployed web app URL ending in /exec. Keep it private from unnecessary sharing; this public endpoint is intended to receive website orders.
+
+PART B — CONNECT THE WEBSITE
+1. Open order-config.js.
+2. Replace PASTE_GOOGLE_APPS_SCRIPT_WEB_APP_EXEC_URL_HERE with the exact /exec URL copied above. Keep the quote marks.
+3. Save the file. Do not add Gmail passwords, Google account passwords, or private API keys to website files.
+4. Upload/deploy the entire joel_work2 folder to Vercel, keeping the assets and JavaScript files together.
+
+PART C — TEST
+1. Open the live Vercel website and place a test order with one small JPG/PNG/WebP image.
+2. Check joelframesworks@gmail.com Inbox and Spam for an email with an attached ZIP.
+3. Open the ZIP and check ORDER-DETAILS.txt plus the original image and generated preview.
+4. WhatsApp opens with a pre-filled owner notification. The customer must press Send; a wa.me link cannot silently send a WhatsApp message.
+
+IMPORTANT LIMITATIONS
+- Website status means the form was submitted to Apps Script; browser cross-origin restrictions prevent this simple implementation from verifying that Gmail delivery completed. Always check Gmail during testing.
+- Keep ZIPs under 18 MB. Apps Script/Gmail quotas and limits apply; this is not unlimited free email.
+- A public endpoint can be abused. This starter does not have strong rate limiting or CAPTCHA. Before advertising the order form widely, add abuse protection and test thoroughly.
+- If the deployment URL changes, update order-config.js and redeploy Vercel.
+- When editing Apps Script later, use Deploy > Manage deployments > Edit > New version > Deploy.
