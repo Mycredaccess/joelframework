@@ -3,5 +3,5 @@
 window.JOEL_ORDER_CONFIG = {
   ownerEmail: 'joelframesworks@gmail.com',
   ownerWhatsApp: '918610493135',
-  appsScriptUrl: 'PASTE_GOOGLE_APPS_SCRIPT_WEB_APP_EXEC_URL_HERE'
+  appsScriptUrl: 'https://script.google.com/macros/s/AKfycbyLRbh_tjEnoJhUe0uaahrRrbtZmcllNRne2Nyc8Xnh3wgRIZX8eKzzZmtyLIW9WTvdlw/exec'
 };
